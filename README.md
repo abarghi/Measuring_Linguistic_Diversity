@@ -27,7 +27,7 @@ number of elements in a system.'' In ecology, this is the number of equiprobable
 species in a population having the same entropic index. Jost shows that, 
 in order to use the Gini-Simpson index (or equivalently, LDI) as a measure of 
 diversity, one needs to consider the following transformation of $H_2$:
-$$D_2 = \frac{1}{1-H_2}  = \frac{1}{\sum^n _{i=1} p_i ^2}.$$
+$$D_2 = \frac{1}{1-H_2}  = 1/\left(\sum^n _{i=1} p_i ^2 \right).$$
 This is also known as the effective number of a population which was 
 introduced by MacArthur in 1965[^4]. In addition to Gini-Simpson index, 
 there are other measures of entropy (Richness, Shannon, HCDT, and Rényi) 
@@ -157,7 +157,7 @@ HCDT
 
 HCDT entropy was introduced by Tsallis in statistical mechanics[^16] 
 and is defined as
-$$H_q = \dfrac{\left(1 - \sum_{i = 1} ^n p_i ^q \right)}{q-1} ,$$ for
+$$H_q = \left(1 - \sum_{i = 1} ^n p_i ^q \right) / (q-1) ,$$ for
 $q \neq 1$. Jost[^3] (Appendix 1, Proof 1) implicitly shows that the
 effective number associated with this entropy is
 $$D_q =  (1-(q-1)H_q)^{\frac{1}{1-q}} = \left(\sum_{i = 1} ^n p_i ^q\right)^{\frac{1}{1-q}} ,$$
@@ -175,7 +175,7 @@ Rényi
 
 Introduced by Rényi in 1961[^18] as a generalization of Shannon's
 entropy, Rényi entropy is defined as
-$$H_q = \dfrac{ - \ln\left( \sum_{i = 1} ^n p_i ^q \right)}{q-1},$$ for
+$$H_q = - \ln\left( \sum_{i = 1} ^n p_i ^q \right) / (q-1),$$ for
 $q \neq 1$. In particular, Shannon entropy is the limit of $H_q$ as
 $q \to 1$. Jost[^3] implicitly shows (Appendix 1, Proof 1)
 that the effective number for Rényi entropy is
@@ -217,22 +217,22 @@ we assume that $w_i = 1/N$. However, for weighted diversities, we let
 $w_i$ to be the ratio between the $i$-th country's population and the
 total population of the countries in this exploration. Jost[^3]
 shows that the weighted alpha diversity, for $q \neq 1$, is
-$$D_{w, \alpha} ^q = \left ( \frac{\sum_{i = 1} ^N w_i ^q \sum_{j = 1}^S p_{j,i}^q}{\sum_{i = 1} ^N w_i ^q} \right)^{1/(1-q)}$$
+$$D_{w, \alpha} ^q = \left ( \sum_{i = 1} ^N w_i ^q \sum_{j = 1}^S p_{j,i}^q / \left(\sum_{i = 1} ^N w_i ^q \right) \right)^{1/(1-q)}$$
 and, for $q = 1$,
 $$D_{w, \alpha} ^1 = \exp \left ( - \sum_{i = 1} ^N w_i \sum_{j = 1}^S p_{j,i} \ln(p_{j,i}) \right).$$
 For unweighted alpha diversity, let $w_i = 1/N$ for all $i$ and we have
-$$D_{u, \alpha} ^q = \left ( \frac{\sum_{i = 1}^N \sum_{j = 1}^S p_{j,i}^q}{N} \right)^{1/(1-q)}$$
+$$D_{u, \alpha} ^q = \left ( \sum_{i = 1}^N \sum_{j = 1}^S p_{j,i}^q / N \right)^{1/(1-q)}$$
 and, for $q = 1$,
-$$D_{u, \alpha} ^1 = \exp \left (- \frac{\sum_{i = 1}^N \sum_{j = 1}^S p_{j,i} \ln(p_{j,i})}{N} \right).$$
+$$D_{u, \alpha} ^1 = \exp \left (- \sum_{i = 1}^N \sum_{j = 1}^S p_{j,i} \ln(p_{j,i}) / N \right).$$
 
 For $q \neq 1$, The weighted gamma diversity is
-$$D_{w, \gamma} ^q = \left ( \frac{\sum_{j = 1}^S \left( \sum_{i = 1} ^N w_i p_{j,i} \right)^q}{\sum_{i = 1} ^N w_i ^q} \right)^{1/(1-q)}$$
+$$D_{w, \gamma} ^q = \left ( \sum_{j = 1}^S \left( \sum_{i = 1} ^N w_i p_{j,i} \right)^q / \left( \sum_{i = 1} ^N w_i ^q \right) \right)^{1/(1-q)}$$
 and, for $q = 1$, it is
 $$D_{w, \gamma} ^1 = \exp \left ( - \sum_{j = 1}^S \left( \sum_{i = 1} ^N w_i p_{j,i} \right) \ln\left(\sum_{i = 1} ^N w_i p_{j,i}\right) \right).$$
 When $w_i = 1/N$ for all $i$, we have
-$$D_{u, \gamma} ^q = \left ( \frac{ \sum_{j = 1}^S \left (\sum_{i = 1}^N p_{j,i}\right) ^q}{N} \right)^{1/(1-q)}$$
+$$D_{u, \gamma} ^q = \left (  \sum_{j = 1}^S \left (\sum_{i = 1}^N p_{j,i}\right) ^q / N \right)^{1/(1-q)}$$
 and, for $q = 1$,
-$$D_{u, \gamma} ^1 = \exp \left (- \sum_{j = 1}^S \left( \frac{\sum_{i = 1} ^N p_{j,i}}{N} \right) \ln\left(\frac{\sum_{i = 1} ^N p_{j,i}}{N} \right) \right).$$
+$$D_{u, \gamma} ^1 = \exp \left (- \sum_{j = 1}^S \left( \sum_{i = 1} ^N p_{j,i} / N \right) \ln\left( \sum_{i = 1} ^N p_{j,i} / N \right) \right).$$
 
 Finally, for $q \geq 0$, weighted and unweighted beta diversities are
 $$D_{w, \beta} ^q = \frac{D_{w, \gamma}^q}{D_{w, \alpha}^q} \quad \text{ and } \quad D_{u, \beta} ^q = \frac{D_{u, \gamma}^q}{D_{u, \alpha}^q},$$
