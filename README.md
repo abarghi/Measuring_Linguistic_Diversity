@@ -1,4 +1,4 @@
-# Measuring_Linguistic_Diversity: A Case Study I
+# Measuring Linguistic Diversity: A Case Study I
 
 > **Abstract** In this paper, we look at different measures of linguistic 
 > diversity in thirty one countries, mainly in Asia, based on richness, 
