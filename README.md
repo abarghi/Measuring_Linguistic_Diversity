@@ -470,7 +470,9 @@ in these countries using color.
 
 The maps on the left use
 different overall ranges. When we use the same range for all three maps,
-we get the maps on the right. 
+we get the maps on the right. Below is the animated map for $q$ in `seq(.001, 5, .2)`:
+
+<center><img src='https://github.com/abarghi/Measuring_Linguistic_Diversity/blob/main//Figures/all_animated.gif' width = '400'></center>
 
 Linguistic Diversity Based on Hill Numbers
 ------------------------------------------
