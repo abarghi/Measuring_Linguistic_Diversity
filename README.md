@@ -16,7 +16,7 @@ In 1956, Greenberg[^1] defined linguistic diversity as the probability that two
 randomly chosen individuals (with replacement) from a population have different 
 first languages. In other words, if there are $n$ languages in a population and 
 $p_i$ denotes the probability that an individual chosen at random from this 
-population has the $i$th language as their first language, for 
+population has the $i$-th language as their first language, for 
 $i \in \{1,\ldots,n\}$, then Greenberg's linguistic diversity index (LDI) is calculated as
 $$H_2 = 1 - \sum_{i=1} ^n p_i^2.$$
 In ecology, $H_2$ is known as Gini-Simpson index (named after Italian Statistician, 
@@ -99,7 +99,7 @@ For our analysis, we use the following data sets:
 
     -   `Table_of_LICs.tab`
 
--   From [Glottolog 4.6](href="https://glottolog.org/)[^12], we
+-   From [Glottolog 4.6](https://glottolog.org/meta/downloads)[^12], we
     use:
 
     -   `languoid.csv`
