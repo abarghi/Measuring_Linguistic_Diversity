@@ -17,13 +17,13 @@ randomly chosen individuals (with replacement) from a population have different
 first languages. In other words, if there are $n$ languages in a population and 
 $p_i$ denotes the probability that an individual chosen at random from this 
 population has the $i$-th language as their first language, for 
-$i \in \{1,\ldots,n\}$, then Greenberg's linguistic diversity index (LDI) is calculated as
+$i \in \\{1,\ldots,n\\}$, then Greenberg's linguistic diversity index (LDI) is calculated as
 $$H_2 = 1 - \sum_{i=1} ^n p_i^2.$$
 In ecology, $H_2$ is known as Gini-Simpson index (named after Italian Statistician, 
 [Corrado Gini](https://www.britannica.com/biography/Corrado-Gini), and after Edward Hugh Simpson[^2]), 
 and as discussed by Jost[^3], it is measure of entropy (or uncertainty) and not 
-diversity. According to Jost, a diversity index should measure ``the effective 
-number of elements in a system.'' In ecology, this is the number of equiprobable 
+diversity. According to Jost, a diversity index should measure "the effective 
+number of elements in a system." In ecology, this is the number of equiprobable 
 species in a population having the same entropic index. Jost shows that, 
 in order to use the Gini-Simpson index (or equivalently, LDI) as a measure of 
 diversity, one needs to consider the following transformation of $H_2$:
@@ -116,8 +116,8 @@ interchangeably. We also discuss alpha, beta, and gamma diversities in
 more detail in this section. Throughout this section, we assume that
 there are $n$ languages in a population or a country, and $p_i$ denotes
 the probability that an individual chosen at random from this population
-has the $i$th language as their first language, for
-$i \in \{1,\ldots,n\}$. We denote an entropy and a diversity by $H_q$
+has the $i$-th language as their first language, for
+$i \in \\{1,\ldots,n\\}$. We denote an entropy and a diversity by $H_q$
 and $D_q$, respectively, where $q$ denotes the order of the entropy and
 of the diversity.
 
@@ -708,36 +708,36 @@ I would like to thank the Office of the Dean of the Faculty at Saint
 Michael's College for the Merit-based Course Reduction Award in Fall
 2020 that allowed me to continue my work on this paper.
 
-[^1]: J. H. Greenberg. The measurement of linguistic diversity. *Language*, 32(1):109–115, 1956.
-[^2]: E. H Simpson. Measurement of diversity. *Nature*, 163(4148):688–688, 1949.
-[^3]: L. Jost. Entropy and diversity. *Oikos*, 113(2):363–375, 2006.
-[^4]: R. H MacArthur. Patterns of species diversity. *Biological Reviews*, 40(4):510–533, 1965.
-[^5]: St. H Hurlbert. The nonconcept of species diversity: a critique and alternative parameters. *Ecology*, 52(4):577–586, 1971.
-[^6]: R. K. Peet. The measurement of species diversity. *Annual Review of Ecology and Systematics*, pages 285–307, 1974.
-[^7]: G. P. Patil and C. Taillie. Diversity as a concept and its measurement. *Journal of the American Statistical Association*, 77(379):548–561, 1982.
-[^8]: J. Ginebra and X. Puig. On the measure and the estimation of evenness and diversity. *Computational Statistics & Data Analysis*, 54(9):2187–2201, 2010.
-[^9]: R. H. Whittaker. Vegetation of the siskiyou mountains, oregon and california. *Ecological Monographs*, 30(3):279–338, 1960.
-[^10]: R. H. Whittaker. Evolution and measurement of species diversity. *Taxon*, 21(2-3):213–251, 1972.
+[^1]: J. H. Greenberg. The measurement of linguistic diversity. *Language*, 32(1):109--115, 1956.
+[^2]: E. H Simpson. Measurement of diversity. *Nature*, 163(4148):688--688, 1949.
+[^3]: L. Jost. Entropy and diversity. *Oikos*, 113(2):363--375, 2006.
+[^4]: R. H MacArthur. Patterns of species diversity. *Biological Reviews*, 40(4):510--533, 1965.
+[^5]: St. H Hurlbert. The nonconcept of species diversity: a critique and alternative parameters. *Ecology*, 52(4):577--586, 1971.
+[^6]: R. K. Peet. The measurement of species diversity. *Annual Review of Ecology and Systematics*, pages 285--307, 1974.
+[^7]: G. P. Patil and C. Taillie. Diversity as a concept and its measurement. *Journal of the American Statistical Association*, 77(379):548--561, 1982.
+[^8]: J. Ginebra and X. Puig. On the measure and the estimation of evenness and diversity. *Computational Statistics & Data Analysis*, 54(9):2187--2201, 2010.
+[^9]: R. H. Whittaker. Vegetation of the Siskiyou Mountains, Oregon and California. *Ecological Monographs*, 30(3):279--338, 1960.
+[^10]: R. H. Whittaker. Evolution and measurement of species diversity. *Taxon*, 21(2-3):213--251, 1972.
 [^11]: D. M. Eberhard, G. F. Simons, and C. D. Fennig. Ethnologue: Languages of the world, 2019.
 [^12]: H. Hammarström, R. Forkel, M. Haspelmath, and S. Bank. Glottolog 4.6., 2022.
-[^13]: C. E. Shannon. A mathematical theory of communication. *The Bell System Technical Journal*, 27(3):379–423, 1948.
-[^14]: M. O. Hill. Diversity and evenness: a unifying notation and its consequences. *Ecology*, 54(2):427–432, 1973.
-[^15]: S. Lieberson. An extension of greenberg’s linguistic diversity measures. *Language*, 40(4):526–531, 1964.
-[^16]: C. Tsallis. Possible generalization of boltzmann-gibbs statistics. *Journal of Statistical Physics*, 52(1):479–487, 1988.
-[^17]: C. J. Keylock. Simpson diversity and the shannon–wiener index as special cases of a generalized entropy. *Oikos*, 109(1):203–207, 2005.
-[^18]: Alfréd Rényi. On measures of entropy and information. In *Proceedings of the Fourth Berkeley Symposium on Mathematical Statistics and Probability*, volume 1, pages 547–561. University of California Press, Berkeley, California, USA, 1961.
-[^19]: L. Jost. Partitioning diversity into independent alpha and beta components. *Ecology*, 88(10):2427–2439, 2007.
-[^20]: J. A. Veech and T. O. Crist. Diversity partitioning without statistical independence of alpha and beta. *Ecology*, 91(7):1964–1969, 2010.
-[^21]: C. Ricotta. On beta diversity decomposition: trouble shared is not trouble halved. *Ecology*, 91(7):1981–1983, 2010.
-[^22]: L. Jost. Independence of alpha and beta diversities. *Ecology*, 91(7):1969–1974, 2010.
-[^23]: T. Sørensen. A method of establishing groups of equal amplitude in plant sociology based on similarity of species and its application to analyses of the vegetation on danish commons. *Kongelige Danske Videnskabernes Selskab*, pages 1–34, 1948.
-[^24]: L. R Dice. Measures of the amount of ecologic association between species. *Ecology*, 26(3):297–302, 1945.
-[^25]: P. Jaccard. The distribution of the flora in the alpine zone. 1. *New Phytologist*, 11(2):37–50, 1912.
-[^26]: C. R. Rao. Diversity and dissimilarity coefficients: a unified approach. *Theoretical Population Biology*, 21(1):24–43, 1982.
-[^27]: D. Harmon and J. Loh. The index of linguistic diversity: A new quantitative measure of trends in the status of the world’s languages. *Language Documentation & Conservation*, 4:97–151, 2010.
-[^28]: M. R. Helmus, T. J. Bland, C. K. Williams, and A. R. Ives. Phylogenetic measures of biodiversity. *The American Naturalist*, 169(3):E68–E83, 2007.
+[^13]: C. E. Shannon. A mathematical theory of communication. *The Bell System Technical Journal*, 27(3):379--423, 1948.
+[^14]: M. O. Hill. Diversity and evenness: a unifying notation and its consequences. *Ecology*, 54(2):427--432, 1973.
+[^15]: S. Lieberson. An extension of Greenberg’s linguistic diversity measures. *Language*, 40(4):526--531, 1964.
+[^16]: C. Tsallis. Possible generalization of Boltzmann-Gibbs statistics. *Journal of Statistical Physics*, 52(1):479--487, 1988.
+[^17]: C. J. Keylock. Simpson diversity and the Shannon–Wiener index as special cases of a generalized entropy. *Oikos*, 109(1):203--207, 2005.
+[^18]: Alfréd Rényi. On measures of entropy and information. In *Proceedings of the Fourth Berkeley Symposium on Mathematical Statistics and Probability*, volume 1, pages 547--561. University of California Press, Berkeley, California, USA, 1961.
+[^19]: L. Jost. Partitioning diversity into independent alpha and beta components. *Ecology*, 88(10):2427--2439, 2007.
+[^20]: J. A. Veech and T. O. Crist. Diversity partitioning without statistical independence of alpha and beta. *Ecology*, 91(7):1964--1969, 2010.
+[^21]: C. Ricotta. On beta diversity decomposition: trouble shared is not trouble halved. *Ecology*, 91(7):1981--1983, 2010.
+[^22]: L. Jost. Independence of alpha and beta diversities. *Ecology*, 91(7):1969--1974, 2010.
+[^23]: T. Sørensen. A method of establishing groups of equal amplitude in plant sociology based on similarity of species and its application to analyses of the vegetation on Danish commons. *Kongelige Danske Videnskabernes Selskab*, pages 1--34, 1948.
+[^24]: L. R Dice. Measures of the amount of ecologic association between species. *Ecology*, 26(3):297--302, 1945.
+[^25]: P. Jaccard. The distribution of the flora in the Alpine zone. 1. *New Phytologist*, 11(2):37--50, 1912.
+[^26]: C. R. Rao. Diversity and dissimilarity coefficients: a unified approach. *Theoretical Population Biology*, 21(1):24--43, 1982.
+[^27]: D. Harmon and J. Loh. The index of linguistic diversity: A new quantitative measure of trends in the status of the world’s languages. *Language Documentation & Conservation*, 4:97--151, 2010.
+[^28]: M. R. Helmus, T. J. Bland, C. K. Williams, and A. R. Ives. Phylogenetic measures of biodiversity. *The American Naturalist*, 169(3):E68--E83, 2007.
 [^29]: A. R. Ives and M. R. Helmus. Phylogenetic metrics of community similarity. *The American Naturalist*, 176(5):E128–E142, 2010.
-[^30]: S. Champely and D. Chessel. Measuring biological diversity using euclidean metrics. *Environmental and Ecological Statistics*, 9(2):167–177, 2002.
-[^31]: M. W. Cadotte, T. J. Davies, J. Regetz, S. W. Kembel, E. Clevand, and T. Oakley. Phylogenetic diversity metrics for ecological communities: integrating species richness, abundance and evolutionary history. *Ecology Letters*, 13(1):96–105, 2010.
-[^32]: A. Chao, C.-H. Chiu, and L. Jost. Phylogenetic diversity measures based on hill numbers. *Philosophical Transactions of the Royal Society B: Biological Sciences*, 365(1558):3599–3609, 2010.
-[^33]: C.-H. Chiu, L. Jost, and A. Chao. Phylogenetic beta diversity, similarity, and differentiation measures based on hill numbers. *Ecological Monographs*, 84(1):21–44, 2014.
+[^30]: S. Champely and D. Chessel. Measuring biological diversity using euclidean metrics. *Environmental and Ecological Statistics*, 9(2):167--177, 2002.
+[^31]: M. W. Cadotte, T. J. Davies, J. Regetz, S. W. Kembel, E. Clevand, and T. Oakley. Phylogenetic diversity metrics for ecological communities: integrating species richness, abundance and evolutionary history. *Ecology Letters*, 13(1):96--105, 2010.
+[^32]: A. Chao, C.-H. Chiu, and L. Jost. Phylogenetic diversity measures based on Hill numbers. *Philosophical Transactions of the Royal Society B: Biological Sciences*, 365(1558):3599--3609, 2010.
+[^33]: C.-H. Chiu, L. Jost, and A. Chao. Phylogenetic beta diversity, similarity, and differentiation measures based on Hill numbers. *Ecological Monographs*, 84(1):21--44, 2014.
